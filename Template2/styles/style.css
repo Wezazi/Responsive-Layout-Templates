@@ -1,0 +1,62 @@
+
+body{
+    
+    background-color:#333333;
+}
+
+.why{
+    height:685px;
+    display:flex;
+    justify-content: center;
+    color:white;
+    background-image: url("../images/castle.png");
+    background-size:cover;
+    background-position: center;
+    flex-wrap:wrap;
+}
+
+.why__content{
+    max-width:1113px;
+    width:100%;
+    display:flex;
+    flex-wrap:flex;
+    justify-content: space-between;
+}
+
+.why__text{
+    width: 560px;
+}
+
+.why__images{
+    width: 440px;
+}
+
+h2{
+    font-size:36px;
+    line-height:26px;
+}
+
+p{
+    font-size:16px;
+    line-height:26px;
+    letter-spacing:1.6px;
+}
+
+button{
+    background-color: #5474FD;
+    width:228px;
+    height:63px;
+    color:white;
+    border:none;
+}
+
+.green{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.bean{
+    display:flex;
+    justify-content:flex-end;
+}
+

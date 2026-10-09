@@ -1,0 +1,59 @@
+.testimonial{
+    padding-top:50px;
+    background-color: #496BFE;
+    height:731px;
+    background-image: url("../images/guy.png");
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    color:white;
+    flex-direction: column;
+}
+
+.card{
+    display:flex;
+    height:100%;
+    align-items: center; 
+        
+
+    gap:20px;
+}
+
+h2{
+    line-height: 26px;
+    font-size: 36px;
+    margin-top: 50px;
+    margin:0;
+}
+
+h4{
+    line-height: 26px;
+    font-size: 20px;
+    margin:0;
+}
+
+p{
+    line-height: 26px;
+    max-width:581px;
+    width:100%;
+}
+
+.max--wrap{
+    max-width:1113px;
+    width:100%;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* I think i figured out why the p element stops shrinking after a certain point, i think it's because the image doesn't shrink which prevents the text from shrinking any further. Let's test out my theory:*/
+img{
+
+    /*Max-widthL100% on the image should now make the image shrink automatically with the viewport just like text in <p> elements does*/
+    max-width:100%; 
+    /*HELL YEAH, this was the root cause, the text doesn't stop shrinking like it did before*/
+
+    height: auto; /*This is really nice, it preserves the proportion of the image even when shrinking the viewport*/
+}
+
