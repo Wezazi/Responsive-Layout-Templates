@@ -60,3 +60,8 @@ button{
     justify-content:flex-end;
 }
 
+img{
+    max-width:100%; 
+    height: auto;
+
+}
